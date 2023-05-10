@@ -1,3 +1,7 @@
-import { colors, backgroundColors, fontColors } from "./colorConstants";
+import {
+  fontColors,
+  indicatorColors,
+  backgroundColors,
+} from "./colorConstants";
 
-export { colors, backgroundColors, fontColors };
+export { fontColors, indicatorColors, backgroundColors };
