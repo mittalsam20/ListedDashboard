@@ -1,0 +1,30 @@
+@import "styles/Colors.module.scss";
+
+.inputFieldContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputText {
+  display: flex;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: $bgSubtle;
+  padding: 8px 16px;
+  border-radius: 12px;
+  height: 40px;
+  &:hover {
+  }
+  &:focus-within {
+    background-color: $bgDarkSubtle;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.error {
+  border-color: 1px solid $bgLightRed;
+}
