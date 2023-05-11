@@ -1,6 +1,7 @@
 // GLOBAL STYLES
 :global {
   @import "./Normalize.module.scss";
+  @import "./Colors.module.scss";
 
   html,
   body {
@@ -14,8 +15,8 @@
   }
 
   body {
-    color: #333;
-    background-color: #fff;
+    color: $textDefault;
+    background-color: $bgSubtle;
   }
   *:before,
   *:after {
@@ -30,7 +31,7 @@
     -webkit-overflow-scrolling: touch;
   }
   #root {
-    background: #ffffff;
+    background: $bgSubtle;
     height: 100%;
     width: 100%;
   }
