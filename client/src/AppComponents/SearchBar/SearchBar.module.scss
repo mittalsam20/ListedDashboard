@@ -1,0 +1,12 @@
+@import "styles/Colors.module.scss";
+
+.searchBarContainer {
+  position: relative;
+  display: flex;
+}
+
+.searchIconContainer {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}

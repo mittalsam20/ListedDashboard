@@ -1,6 +1,6 @@
 import React from "react";
 
-const Likes = () => {
+const LikeIcon = () => {
   return (
     <svg
       width="24"
@@ -17,4 +17,4 @@ const Likes = () => {
   );
 };
 
-export default Likes;
+export default LikeIcon;

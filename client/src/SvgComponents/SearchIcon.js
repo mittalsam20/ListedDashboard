@@ -1,12 +1,14 @@
 import React from "react";
 
-const SearchIcon = () => {
+const SearchIcon = props => {
+  const { className } = props;
   return (
     <svg
       width="13"
       height="12"
       viewBox="0 0 13 12"
       fill="none"
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle cx="5" cy="5" r="4.5" stroke="#858585" />
