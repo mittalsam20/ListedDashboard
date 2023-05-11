@@ -1,15 +1,15 @@
 import React from "react";
 
 import _ from "lodash";
+import { useLocation } from "react-router-dom";
 
 import classes from "./Sidebar.module.scss";
 
 import TagIcon from "SvgComponents/TagIcon";
 import GearIcon from "SvgComponents/GearIcon";
+import AvatarIcon from "SvgComponents/AvatarIcon";
 import CalendarIcon from "SvgComponents/CalendarIcon";
 import PieChartIcon from "SvgComponents/PieChartIcon";
-import UserAvatarIcon from "SvgComponents/UserAvatarIcon";
-import { useLocation } from "react-router-dom";
 
 const navLinks = [
   {
@@ -32,7 +32,7 @@ const navLinks = [
   },
   {
     id: "USERS",
-    Icon: UserAvatarIcon,
+    Icon: AvatarIcon,
     linkText: "Users",
     route: "users",
   },

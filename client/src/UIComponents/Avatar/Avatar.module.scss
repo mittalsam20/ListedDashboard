@@ -1,0 +1,15 @@
+@import "styles/Colors.module.scss";
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $bgWhite;
+  width: 32px;
+  aspect-ratio: 1/1;
+}
+
+.clickable {
+  cursor: pointer;
+}
