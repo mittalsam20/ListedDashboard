@@ -8,11 +8,13 @@ import Sidebar from "Layouts/Partials/AppPartials/Sidebar";
 
 const AppLayout = () => {
   return (
-    <div>
-      <Header />
-      <div>
-        <Sidebar />
-        <Outlet />
+    <div className={classes.appLayoutContainer}>
+      <Sidebar />
+      <div className={classes.rightBodyContainer}>
+        <Header />
+        <div className={classes.outletContainer}>
+          <Outlet />
+        </div>
       </div>
     </div>
   );
