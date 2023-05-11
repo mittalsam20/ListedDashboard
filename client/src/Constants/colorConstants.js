@@ -10,22 +10,22 @@ export const indicatorColors = {
 };
 
 export const backgroundColors = {
-  default: "#FFFFFF",
-  white: "#FFFFFF",
-  black: "#000000",
-  primary: "#F5F5F5",
-  lightTeal: "#DDEFE0",
-  lightYellow: "#F4ECDD",
-  lightRed: "#EFDADA",
-  lightViolet: "#DEE0EF",
-  subtle: "#F5F5F5",
-  darkSubtle: "#EAEAEA",
+  bgDefault: "#FFFFFF",
+  bgWhite: "#FFFFFF",
+  bgBlack: "#000000",
+  bgPrimary: "#F5F5F5",
+  bgLightTeal: "#DDEFE0",
+  bgLightYellow: "#F4ECDD",
+  bgLightRed: "#EFDADA",
+  bgLightViolet: "#DEE0EF",
+  bgSubtle: "#F5F5F5",
+  bgDarkSubtle: "#EAEAEA",
 };
 
 export const fontColors = {
-  default: "#000000",
-  white: "#FFFFFF",
-  subtle: "#858585",
+  textDefault: "#000000",
+  textWhite: "#FFFFFF",
+  textSubtle: "#858585",
   placeholder: "#B0B0B0",
   link: "#346BD4",
   subtitle: "#666666",
