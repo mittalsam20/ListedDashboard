@@ -1,0 +1,14 @@
+@import "styles/Colors.module.scss";
+
+.container {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.inputLabel {
+  display: flex;
+  font-weight: 400;
+  font-size: 1rem;
+  color: $textDefault;
+}
