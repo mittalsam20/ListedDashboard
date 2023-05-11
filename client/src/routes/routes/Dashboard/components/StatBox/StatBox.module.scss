@@ -1,0 +1,21 @@
+.statBox {
+  padding: 20px 24px;
+  svg {
+    align-self: flex-end;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-size: 0.9rem;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}

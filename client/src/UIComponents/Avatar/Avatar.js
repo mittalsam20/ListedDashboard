@@ -33,7 +33,7 @@ const Avatar = React.memo(props => {
       ) : !!imageUrl ? (
         <img src={imageUrl} alt="USER_PROFILE_IMAGE" />
       ) : (
-        <AvatarIcon fill={backgroundColors.bgBlack} width={24} height={24} />
+        <AvatarIcon fill={backgroundColors.bgBlack} width={20} height={20} />
       )}
     </div>
   );
