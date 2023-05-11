@@ -1,0 +1,52 @@
+@import "styles/Colors.module.scss";
+
+.sidebarContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 48px;
+  background-color: $bgBlack;
+  border-radius: 32px;
+  color: $bgWhite;
+  gap: 60px;
+  max-width: 280px;
+}
+
+.title {
+  display: flex;
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.navListContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2rem;
+  span {
+    cursor: pointer;
+    &:hover {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
+
+.footerLinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 0.9rem;
+  span {
+    cursor: pointer;
+    &:hover {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
