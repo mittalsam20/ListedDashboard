@@ -1,0 +1,24 @@
+@import "styles/Colors.module.scss";
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bgWhite;
+  border-radius: 12px;
+  gap: 12px;
+  color: $textSubtle;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.iconButtonContainer {
+  composes: buttonContainer;
+  padding: 8px;
+  border-radius: 8px;
+  &:hover {
+    background-color: $bgSubtle !important;
+  }
+}
