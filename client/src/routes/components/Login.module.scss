@@ -1,0 +1,73 @@
+@import "styles/Colors.module.scss";
+
+.loginPageContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.boardContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bgBlack;
+  max-width: 40%;
+  color: $textWhite;
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+.rightOuterContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // For smaller screen devices
+  padding: 32px 24px;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 388px;
+  width: 100%;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  margin: 4px 0;
+  gap: 24px;
+}
+
+.registerText {
+  display: flex;
+  justify-content: center;
+  color: $textSubtle;
+  font-weight: 400;
+  font-size: 1rem;
+  gap: 4px;
+}
+
+.linkText {
+  color: $link;
+  cursor: pointer;
+}
