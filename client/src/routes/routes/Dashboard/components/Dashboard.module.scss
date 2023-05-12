@@ -1,0 +1,18 @@
+@import "styles/Colors.module.scss";
+
+.dashboardPageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.statBoxesContainer {
+  display: flex;
+  gap: 36px;
+}
+
+.bottomContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
