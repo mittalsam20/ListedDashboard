@@ -1,0 +1,61 @@
+@import "styles/Colors.module.scss";
+
+.scheduleContainer {
+  padding: 30px 30px 32px 40px;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.seeAllContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: $textSubtle;
+  cursor: pointer;
+}
+
+.schedulesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meetingContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.indicatorDiv {
+  height: 64px;
+  width: 4px;
+}
+
+.meetingInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meetingTitle {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: $subtitle;
+}
+
+.info {
+  font-size: 0.8rem;
+  color: $info;
+}
