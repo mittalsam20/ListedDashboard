@@ -6,13 +6,14 @@ import { fontColors, backgroundColors } from "Constants";
 
 import classes from "./UIButton.module.scss";
 
-const { bgLightTeal, bgDefault, bgLightRed, bgBlack } = backgroundColors;
+const { bgLightTeal, bgDefault, bgLightRed, bgBlack, bgWhite } =
+  backgroundColors;
 
 const variantToStylesMapping = {
   success: { backgroundColor: bgLightTeal },
   primary: { backgroundColor: bgDefault },
   danger: { backgroundColor: bgLightRed },
-  plain: { backgroundColor: "transparent" },
+  plain: { backgroundColor: bgWhite },
   dark: { backgroundColor: bgBlack, color: fontColors.textWhite },
 };
 

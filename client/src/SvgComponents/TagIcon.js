@@ -5,7 +5,7 @@ const TagIcon = props => {
   return (
     <svg
       width="18"
-      height="21"
+      height="24"
       viewBox="0 0 18 21"
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"

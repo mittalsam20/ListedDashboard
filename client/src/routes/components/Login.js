@@ -7,7 +7,7 @@ import classes from "./Login.module.scss";
 import FormContainer from "./FormContainer";
 
 import { UIButton } from "UIComponents";
-import { getButtonProps, getFormInputProps } from "routes/utils/LoginUtils";
+import { getButtonProps, getFormInputProps } from "routes/modules/LoginUtils";
 
 const onClickForgotPassword = () => {
   console.log("You just clicked ForgotPassword");
