@@ -1,6 +1,6 @@
 import React from "react";
 
-import Box from "UIComponents/Box";
+import { Box } from "UIComponents";
 import classes from "./StatBox.module.scss";
 
 const StatBox = props => {

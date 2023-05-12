@@ -9,11 +9,11 @@ import classes from "./UIButton.module.scss";
 const { bgLightTeal, bgDefault, bgLightRed, bgBlack } = backgroundColors;
 
 const variantToStylesMapping = {
-  success: bgLightTeal,
-  primary: bgDefault,
-  danger: bgLightRed,
+  success: { backgroundColor: bgLightTeal },
+  primary: { backgroundColor: bgDefault },
+  danger: { backgroundColor: bgLightRed },
+  plain: { backgroundColor: "transparent" },
   dark: { backgroundColor: bgBlack, color: fontColors.textWhite },
-  plain: "transparent",
 };
 
 const sizeToHeightMapping = {
@@ -32,7 +32,7 @@ const getButtonContainerStyle = ({
 }) => {
   let buttonContainerStyle = {
     height: sizeToHeightMapping[size] || sizeToHeightMapping.md,
-    ...(variantToStylesMapping[variant] || sizeToHeightMapping.primary),
+    ...(variantToStylesMapping[variant] || variantToStylesMapping.plain),
   };
 
   if (isDisabled)

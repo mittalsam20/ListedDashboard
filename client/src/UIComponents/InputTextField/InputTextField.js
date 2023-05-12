@@ -51,7 +51,7 @@ const InputTextField = React.memo(props => {
   });
 
   const inputText = classNames(
-    { [className]: true },
+    { [className]: !!className },
     { [classes.inputText]: true }
   );
 

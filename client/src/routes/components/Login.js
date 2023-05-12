@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 import _ from "lodash";
+import { useNavigate } from "react-router-dom";
 
 import classes from "./Login.module.scss";
 import FormContainer from "./FormContainer";
-import UIButton from "UIComponents/UIButton";
 
-import { useNavigate } from "react-router-dom";
-import { getButtonProps, getFormInputProps } from "routes/utils/Utils";
+import { UIButton } from "UIComponents";
+import { getButtonProps, getFormInputProps } from "routes/utils/LoginUtils";
 
 const onClickForgotPassword = () => {
   console.log("You just clicked ForgotPassword");

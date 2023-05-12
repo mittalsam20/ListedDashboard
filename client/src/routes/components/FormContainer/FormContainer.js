@@ -2,10 +2,8 @@ import React from "react";
 
 import _ from "lodash";
 
-import Box from "UIComponents/Box";
-import UIButton from "UIComponents/UIButton";
+import { Box, UIButton, InputTextField } from "UIComponents";
 import classes from "./FormContainer.module.scss";
-import InputTextField from "UIComponents/InputTextField";
 
 const FormContainer = props => {
   const { formInputProps } = props;
