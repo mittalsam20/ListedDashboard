@@ -2,11 +2,11 @@ import React from "react";
 
 import _ from "lodash";
 
-import { Box } from "UIComponents";
-
 import StatBox from "./StatBox";
 import ScheduleBox from "./ScheduleBox";
-import PieChartBox from "./PieChartBox";
+import UsersLineChart from "./UsersLineChart";
+import ProductsPieChart from "./ProductsPieChart";
+
 import classes from "./Dashboard.module.scss";
 import { statBoxes } from "../modules/DashboardUtils";
 
@@ -18,9 +18,9 @@ const Dashboard = () => {
           <StatBox {...props} />
         ))}
       </div>
-      <Box></Box>
+      <UsersLineChart />
       <div className={classes.bottomContainer}>
-        <PieChartBox />
+        <ProductsPieChart />
         <ScheduleBox />
       </div>
     </div>

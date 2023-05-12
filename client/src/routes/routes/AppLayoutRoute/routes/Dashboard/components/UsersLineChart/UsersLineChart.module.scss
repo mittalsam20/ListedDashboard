@@ -1,0 +1,56 @@
+@import "styles/Colors.module.scss";
+
+.usersChartBox {
+  padding: 30px 40px 24px 40px;
+}
+
+.usersChartContainer {
+  height: 360px;
+  max-height: 360px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  display: flex;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.duration {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: $textSubtle;
+}
+
+.legendsContainer {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.legendContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.indicatorDiv {
+  display: flex;
+  border-radius: 50%;
+  width: 12px;
+  aspect-ratio: 1/1;
+}
