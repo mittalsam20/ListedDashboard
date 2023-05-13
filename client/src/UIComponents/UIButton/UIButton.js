@@ -1,6 +1,5 @@
 import React from "react";
 
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import { fontColors, backgroundColors } from "Constants";
 
@@ -104,29 +103,5 @@ const UIButton = React.memo(props => {
     </div>
   );
 });
-
-const buttonSizes = ["xl", "lg", "md", "sm", "xs"];
-const iconPositions = ["left", "right", "top", "bottom"];
-const buttonVariants = ["success", "primary", "warning", "danger", "plain"];
-
-UIButton.propTypes = {
-  size: PropTypes.oneOf(buttonSizes),
-  variant: PropTypes.oneOf(buttonVariants),
-  onClick: PropTypes.func,
-  iconPosition: PropTypes.oneOf(iconPositions),
-  isDisabled: PropTypes.bool,
-  containerStyle: PropTypes.object,
-  isIconButton: PropTypes.bool,
-};
-
-UIButton.defaultProps = {
-  size: "md",
-  variant: "primary",
-  onClick: () => {},
-  iconPosition: "left",
-  isDisabled: false,
-  containerStyle: {},
-  isIconButton: false,
-};
 
 export default UIButton;

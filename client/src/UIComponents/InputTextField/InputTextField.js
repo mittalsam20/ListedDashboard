@@ -4,7 +4,7 @@ import classNames from "classnames";
 import UILabel from "UIComponents/UILabel";
 import classes from "./InputTextField.module.scss";
 
-const getUpdatedInputStyle = ({ disabled, inputStyle, errorStyle }) => {
+const getUpdatedInputStyle = ({ disabled, inputStyle }) => {
   let updatedInputStyle = inputStyle;
   if (disabled) {
     updatedInputStyle = {
@@ -25,7 +25,6 @@ const InputTextField = React.memo(props => {
     disabled,
     autoFocus,
     className,
-    errorStyle,
     inputStyle,
     placeholder,
     autoComplete,
@@ -47,7 +46,6 @@ const InputTextField = React.memo(props => {
   const updatedInputStyle = getUpdatedInputStyle({
     disabled,
     inputStyle,
-    errorStyle,
   });
 
   const inputText = classNames(

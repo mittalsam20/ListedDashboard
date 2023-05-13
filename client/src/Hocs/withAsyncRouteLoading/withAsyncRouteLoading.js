@@ -1,9 +1,15 @@
 import React, { lazy, Suspense } from "react";
 
-// Hoc for codeSplitting and lazy loading
-// will add chunking here too later on
+const loadingComponentStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "100vw",
+  height: "100vh",
+};
+
 const Loading = () => {
-  return <>{"Loading...."}</>;
+  return <div style={loadingComponentStyle}>{"Loading...."}</div>;
 };
 
 const withAsyncRouteLoading = component => {

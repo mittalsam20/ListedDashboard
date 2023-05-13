@@ -6,13 +6,12 @@ import { Box } from "UIComponents";
 import { LineChart } from "AppComponents";
 import classes from "./UsersLineChart.module.scss";
 
-import { indicatorColors } from "Constants";
 import ChevronDownIcon from "SvgComponents/ChevronDownIcon";
 
 const data = [
   {
     id: "Guest",
-    color: indicatorColors.red,
+    color: "hsl(0, 62%, 77%)",
     data: [
       { x: "Week 1", y: 100 },
       { x: "Week 2", y: 200 },
@@ -22,7 +21,7 @@ const data = [
   },
   {
     id: "User",
-    color: indicatorColors.green,
+    color: "hsl(101, 59%, 68%)",
     data: [
       { x: "Week 1", y: 200 },
       { x: "Week 2", y: 300 },

@@ -2,7 +2,7 @@ import React from "react";
 
 import { ResponsiveLine } from "@nivo/line";
 
-const LineChart = props => {
+const LineChart = React.memo(props => {
   const { data } = props;
   return (
     <ResponsiveLine
@@ -43,6 +43,6 @@ const LineChart = props => {
       animate={false}
     />
   );
-};
+});
 
 export default LineChart;

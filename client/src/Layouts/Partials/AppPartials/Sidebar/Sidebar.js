@@ -1,70 +1,29 @@
 import React from "react";
 
 import _ from "lodash";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import classes from "./Sidebar.module.scss";
-
-import TagIcon from "SvgComponents/TagIcon";
-import GearIcon from "SvgComponents/GearIcon";
-import AvatarIcon from "SvgComponents/AvatarIcon";
-import CalendarIcon from "SvgComponents/CalendarIcon";
-import PieChartIcon from "SvgComponents/PieChartIcon";
-
-const navLinks = [
-  {
-    id: "DASHBOARD",
-    Icon: PieChartIcon,
-    linkText: "Dashboard",
-    route: "dashboard",
-  },
-  {
-    id: "TRANSACTIONS",
-    Icon: TagIcon,
-    linkText: "Transactions",
-    route: "transactions",
-  },
-  {
-    id: "SCHEDULES",
-    Icon: CalendarIcon,
-    linkText: "Schedules",
-    route: "schedules",
-  },
-  {
-    id: "USERS",
-    Icon: AvatarIcon,
-    linkText: "Users",
-    route: "users",
-  },
-  {
-    id: "SETTINGS",
-    Icon: GearIcon,
-    linkText: "Settings",
-    route: "settings",
-  },
-];
-
-const footerLinks = [
-  {
-    id: "HELP",
-    text: "Help",
-    link: "",
-  },
-  {
-    id: "CONTACT_US",
-    text: "Contact Us",
-    link: "",
-  },
-];
+import { footerLinks, navLinks } from "./SideBarUtils";
+import { getCurrentRoute } from "utils/helperFunctions";
 
 const getNavLinkStyle = ({ route, currentRoute }) => {
   const isRouteActive = route === currentRoute;
   return isRouteActive ? { fontWeight: "700" } : {};
 };
 
+const onClickSidebarLinks = ({ route, navigate, currentRoute }) => {
+  if (
+    (route === "dashboard" || route === "transactions") &&
+    route !== currentRoute
+  )
+    navigate(route);
+};
+
 const Sidebar = () => {
   const location = useLocation();
-  const currentRoute = _.last(location.pathname.split("/"));
+  const navigate = useNavigate();
+  const currentRoute = getCurrentRoute({ location });
 
   return (
     <div className={classes.sidebarContainer}>
@@ -73,7 +32,14 @@ const Sidebar = () => {
         {_.map(navLinks, ({ id, Icon, linkText, route }) => {
           const navLinkStyle = getNavLinkStyle({ route, currentRoute });
           return (
-            <div key={id} className={classes.navLink} style={navLinkStyle}>
+            <div
+              key={id}
+              className={classes.navLink}
+              style={navLinkStyle}
+              onClick={() =>
+                onClickSidebarLinks({ route, navigate, currentRoute })
+              }
+            >
               <Icon />
               <span>{linkText}</span>
             </div>
@@ -82,7 +48,7 @@ const Sidebar = () => {
       </div>
       <div className={classes.footerLinksContainer}>
         {_.map(footerLinks, ({ id, text, link }) => {
-          return <span id={id}>{text}</span>;
+          return <span key={id}>{text}</span>;
         })}
       </div>
     </div>

@@ -19,7 +19,7 @@ export const statBoxes = [
   },
   {
     key: "TRANSACTIONS",
-    text: "Total Revenues",
+    text: "Total Transactions",
     value: "1,520",
     Icon: TagIcon,
     iconProps: { fill: textDefault },
@@ -27,14 +27,14 @@ export const statBoxes = [
   },
   {
     key: "LIKES",
-    text: "Total Revenues",
+    text: "Total Likes",
     value: "9,721",
     Icon: LikeIcon,
     statBoxStyle: { backgroundColor: bgLightRed },
   },
   {
     key: "USERS",
-    text: "Total Revenues",
+    text: "Total Users",
     value: "892",
     Icon: UsersIcon,
     statBoxStyle: { backgroundColor: bgLightViolet },

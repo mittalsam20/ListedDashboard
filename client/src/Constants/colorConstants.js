@@ -6,7 +6,7 @@ export const indicatorColors = {
   red: "#EE8484",
   violet: "#6972C3",
   teal: "#9BDD7C",
-  green: "#E9A0A0",
+  green: "#9BDD7C",
 };
 
 export const backgroundColors = {

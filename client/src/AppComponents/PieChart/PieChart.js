@@ -2,7 +2,7 @@ import React from "react";
 
 import { ResponsivePie } from "@nivo/pie";
 
-const PieChart = props => {
+const PieChart = React.memo(props => {
   const { data } = props;
   return (
     <ResponsivePie
@@ -38,6 +38,6 @@ const PieChart = props => {
       ]}
     />
   );
-};
+});
 
 export default PieChart;
